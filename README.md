@@ -1,54 +1,52 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
+
+<a  href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
+
+<img  alt="Gatsby"  src="https://www.gatsbyjs.com/Gatsby-Monogram.svg"  width="60"  />
+
+</a>
+
 </p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
 
-## 🚀 Quick start
+# Gatsby Blog
 
-1.  **Create a Gatsby site.**
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+ ### What's this?
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+  This is a simple blog website made to learn and practice the gatsby framework using the Contentful CMS.
 
-2.  **Start developing.**
+### How to run?
 
-    Navigate into your new site’s directory and start it up.
+To run in development you will need to setup the enviroment variables. To do so create a file called ".env" in the proyect root directory containing the following:
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+```shell
 
-3.  **Open the code and start customizing!**
+GATSBY_GRAPHQL_IDE=playground
+CONTENTFUL_SPACE_ID=YOUR CONTENTFUL SPACE ID
+CONTENTFUL_ACCESS_TOKEN=YOUR CONTENTFUL ACCESS TOKEN
 
-    Your site is now running at http://localhost:8000!
+```
+Then run
+``` shell 
+npm run develop
+```
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+### Contentful
+The contentful model currently is
 
-4.  **Learn more**
+**BlogPost**
+| Field name | Field type |
+| ----------- | ----------- |
+| Title | Short text | 
+| Slug | Short text |
+| Image | Media |
+| Published Date | Date & time |
+| Body | Rich text |
+| Author | Reference |
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+**Author**
+| Field name | Field type |
+| ----------- | ----------- |
+| Name | Short text |
+| Photo | Media |
+| About | Long text |
