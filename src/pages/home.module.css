@@ -1,0 +1,50 @@
+.home-container {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-top: 2rem;
+    height: 100%;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.home-info {
+    min-width: 30%;
+}
+
+.home-info > h1 {
+    font-size: 6rem;
+    text-decoration: underline;
+    text-decoration-color: #744C9E;
+}
+
+.home-info > h2 {
+    font-size: 3rem;
+}
+
+@keyframes scaling {
+    From {
+        -webkit-transform: scale(0.0);
+    }
+    To {
+        -webkit-transform: scale(1.0);
+    }
+}
+
+.home-logo {
+    animation-name: scaling;
+    animation-duration: 0.8s;
+    width: 60vmin;
+    height: 60vmin;
+    float: right;
+}
+
+.home-layout-container {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+
