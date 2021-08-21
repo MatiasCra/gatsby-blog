@@ -23,29 +23,28 @@ module.exports.createPages = async ({ graphql, actions }) => {
       },
     });
   });
-};
-
-/*module.exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions;
-  const blogTemplate = path.resolve("./src/templates/blog.js");
-  const res = await graphql(`
+  const authorTemplate = path.resolve("./src/templates/author.js");
+  const resAuthor = await graphql(`
     query {
-      allContentfulBlogPost {
+      allContentfulAuthor {
         edges {
           node {
-            slug
+            name
+            id
           }
         }
       }
     }
   `);
-  res.data.allContentfulBlogPost.edges.forEach((edge) => {
+  resAuthor.data.allContentfulAuthor.edges.forEach((edge) => {
+    const pageName = edge.node.name.toLowerCase().replace(" ", "_");
     createPage({
-      component: blogTemplate,
-      path: `/blog/${edge.node.slug}`,
+      component: authorTemplate,
+      path: `/author/${pageName}`,
       context: {
-        slug: edge.node.slug,
+        name: edge.node.name,
+        id: edge.node.id,
       },
     });
   });
-};*/
+};

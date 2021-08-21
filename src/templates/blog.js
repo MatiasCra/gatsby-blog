@@ -1,8 +1,10 @@
 import React from "react";
 import Layout from "../components/layout.js";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import { renderRichText } from "gatsby-source-contentful/rich-text";
 import Head from "../components/head";
+import { makeSlug } from "../functions/makeSlug";
+import * as postStyles from "./post.module.css";
 
 export const query = graphql`
   query ($slug: String!) {
@@ -27,6 +29,9 @@ export const query = graphql`
           }
         }
       }
+      author {
+        name
+      }
     }
   }
 `;
@@ -42,14 +47,25 @@ const Blog = ({ data }) => {
     },
   };
 
-  const bannerImgSrc = data.contentfulBlogPost.image.gatsbyImageData.images.fallback.src;
+  const bannerImgSrc =
+    data.contentfulBlogPost.image.gatsbyImageData.images.fallback.src;
 
   return (
     <Layout>
       <Head title={data.contentfulBlogPost.title} />
       <h1>{data.contentfulBlogPost.title}</h1>
-      <p>{data.contentfulBlogPost.publishedDate}</p>
-      <img src={bannerImgSrc} alt="postBanner"/>
+      <div className={postStyles.postInfo}>
+        <p className={postStyles.postDate}>
+          {data.contentfulBlogPost.publishedDate}
+        </p>
+        <Link
+          to={`/author/${makeSlug(data.contentfulBlogPost.author.name)}`}
+          className={postStyles.authorLink}
+        >
+          by {data.contentfulBlogPost.author.name}
+        </Link>
+      </div>
+      <img src={bannerImgSrc} alt="postBanner" />
       {renderRichText(data.contentfulBlogPost.body, options)}
     </Layout>
   );
