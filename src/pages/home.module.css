@@ -20,7 +20,7 @@
 
 .home-info {
     animation-name: slide-up;
-    animation-duration: 0.8s;
+    animation-duration: 0.6s;
     animation-timing-function: ease;
     min-width: 30%;
 }
@@ -46,7 +46,7 @@
 
 .home-logo {
     animation-name: scaling;
-    animation-duration: 0.8s;
+    animation-duration: 0.6s;
     animation-timing-function: ease;
     width: 60vmin;
     height: 60vmin;
