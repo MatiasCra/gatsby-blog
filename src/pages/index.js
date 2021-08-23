@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "../components/header.js";
 import Footer from "../components/footer.js";
 import Head from "../components/head";
-import gatsbyLogo from "../media/gatsby-logo.svg";
+import Header from "../components/header.js";
 import * as homeStyles from "./home.module.css";
+import gatsbyLogo from "../media/gatsby-logo.svg";
 
 const IndexPage = () => {
   return (
@@ -13,7 +13,7 @@ const IndexPage = () => {
       <div className={homeStyles.homeContainer}>
         <div className={homeStyles.homeInfo}>
           <h1>Hello</h1>
-          <h2>This is a simple <br/> blog website <br/> made ith Gatsby.</h2>
+          <h2>This is a simple <br/> blog website <br/> made with Gatsby.</h2>
         </div>
         <img
           src={gatsbyLogo}

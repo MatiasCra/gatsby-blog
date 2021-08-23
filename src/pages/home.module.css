@@ -8,7 +8,20 @@
     flex-grow: 1;
 }
 
+@keyframes slide-up {
+    From {
+        opacity: 0;
+        -webkit-transform: translateY(2rem);
+    } 
+    To {
+        opacity: 1;
+    }
+}
+
 .home-info {
+    animation-name: slide-up;
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
     min-width: 30%;
 }
 
@@ -34,6 +47,7 @@
 .home-logo {
     animation-name: scaling;
     animation-duration: 0.8s;
+    animation-timing-function: ease;
     width: 60vmin;
     height: 60vmin;
     float: right;
