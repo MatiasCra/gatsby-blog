@@ -10,6 +10,9 @@
 
 # Gatsby Blog
 
+### Hosting
+
+This site is being hosted at https://zen-kirch-8328d6.netlify.app/
 
  ### What's this?
 
@@ -32,7 +35,7 @@ npm run develop
 ```
 
 ### Contentful
-The contentful model currently is
+The contentful model is:
 
 **BlogPost**
 | Field name | Field type |
