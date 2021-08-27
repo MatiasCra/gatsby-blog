@@ -5,10 +5,6 @@ import Header from "../components/header.js";
 import * as homeStyles from "./home.module.css";
 import gatsbyLogo from "../media/gatsby-logo.svg";
 
-/* Decided to avoid the layoyt component so I can display things where I want to without 
-bothering about the global layout restrictions. This should be changed is the site is to 
-be made responsive. */  
-
 const IndexPage = () => {
   return (
     <div className={homeStyles.homeLayoutContainer}>

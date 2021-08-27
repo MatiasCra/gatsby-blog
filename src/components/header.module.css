@@ -1,45 +1,89 @@
 .header {
-    padding: 0 2rem 0;
-    margin: 0;
-    background-color: #333B3F;
-    width: 100%;
-    height: 4rem;
-    display: grid;
+  padding: 0 2rem 0;
+  margin: 0;
+  background-color: #333b3f;
+  width: 100%;
+  height: 4rem;
+  display: block;
 }
 
 .title {
-    color: ghostwhite;
-    font-size: 2rem;
-    line-height: 3.25rem;
-    text-decoration: none;
-    grid-column: 1 / 100;
-    grid-row: 1 / 1;
+  display: inline;
+}
+
+.title > a {
+  color: ghostwhite;
+  font-size: 2rem;
+  line-height: 3.25rem;
+  text-decoration: none;
 }
 
 .nav-bar {
-    grid-column: 100 / 100;
-    grid-row: 1 / 1;
+  display: flex;
+  float: right;
+  height: 100%;
 }
 
 .nav-list {
-    height: 100%;
-    display: flex;
-    list-style-type: none;
-    margin: 0;
+  align-self: center;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding-top: 0.7rem;
+  align-items: center;
+  transition: height 0.3s ease-out;
+}
+
+@media only screen and (max-width: 700px) {
+  .nav-list {
+    content-visibility: hidden;
+    overflow: hidden;
+    content-visibility: visible;
+    display: block;
+    position: absolute;
+    top: 4rem;
+    height: 0;
+    left: 0;
+    background-color: #262c2e;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .nav-list > li {
+      margin-top: 0.725rem;
+  }
+
+  .nav-list > li > a {
+      font-size: 1rem;
+  }
+}
+
+.nav-menu {
+  content-visibility: visible;
+  display: block;
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  height: 9.5rem;
+  background-color: #262c2e;
+  width: 100%;
 }
 
 .nav-item {
-    color: ghostwhite;
-    line-height: 3.75rem;
-    font-size: 0.9rem;
-    margin-right: 1.3rem;
-    text-decoration: none;
+  color: rgb(199, 199, 199);
+  font-size: 0.9rem;
+  margin-right: 1.3rem;
+  margin-bottom: 0;
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+  display: block;
 }
 
 .nav-item:hover {
-    color: #a1a1a1;
+  color: ghostwhite;
 }
 
 .active-nav-item {
-    color: rgb(199, 199, 199);
+  color: ghostwhite;
 }

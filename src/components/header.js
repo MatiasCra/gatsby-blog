@@ -1,6 +1,7 @@
-import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
-import * as headerStyles from "./header.module.css"
+import React from "react";
+import { Link, graphql, useStaticQuery } from "gatsby";
+import * as headerStyles from "./header.module.css";
+import MenuButton from "./menu-button";
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -11,17 +12,16 @@ const Header = () => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <header className={headerStyles.header}>
-      <h1>
-        <Link to="/" className={headerStyles.title}>
-          {data.site.siteMetadata.title}
-        </Link>
+      <h1 className={headerStyles.title}>
+        <Link to="/">{data.site.siteMetadata.title}</Link>
       </h1>
       <nav className={headerStyles.navBar}>
-        <ul className={headerStyles.navList}>
+        <MenuButton toggleMenuClass={headerStyles.navMenu} menuId="nav-list"/>
+        <ul className={headerStyles.navList} id="nav-list">
           <li>
             <Link
               to="/"
@@ -61,7 +61,7 @@ const Header = () => {
         </ul>
       </nav>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
