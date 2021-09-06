@@ -2,7 +2,7 @@ require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://zen-kirch-8328d6.netlify.app",
     title: "Gatsby Blog",
     author: "Matías Cravchik"
   },

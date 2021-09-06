@@ -9,11 +9,14 @@
 
 .title {
   display: inline;
+  align-self: center;
+  position: absolute;
+  top: 0.15rem;
 }
 
 .title > a {
   color: ghostwhite;
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 3.25rem;
   text-decoration: none;
 }
@@ -51,11 +54,12 @@
   }
 
   .nav-list > li {
-      margin-top: 0.725rem;
+    margin-top: 0.725rem;
   }
 
   .nav-list > li > a {
-      font-size: 1rem;
+    line-height: 2.75rem;
+    font-size: 2rem;
   }
 }
 
@@ -65,7 +69,7 @@
   position: absolute;
   top: 4rem;
   left: 0;
-  height: 9.5rem;
+  height: 14.5rem;
   background-color: #262c2e;
   width: 100%;
 }
