@@ -16,8 +16,8 @@
 
 .title > a {
   color: ghostwhite;
-  font-size: 2.5rem;
-  line-height: 3.25rem;
+  font-size: 2rem;
+  line-height: 3.5rem;
   text-decoration: none;
 }
 
@@ -59,7 +59,8 @@
 
   .nav-list > li > a {
     line-height: 2.75rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin: 0;
   }
 }
 
@@ -69,6 +70,8 @@
   position: absolute;
   top: 4rem;
   left: 0;
+  margin: 0;
+  padding: 0;
   height: 14.5rem;
   background-color: #262c2e;
   width: 100%;

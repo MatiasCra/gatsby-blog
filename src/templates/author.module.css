@@ -2,19 +2,21 @@
     display: grid;
     margin-top: 2rem;
     grid-auto-columns: 1fr;
-    padding: 1rem;
 }
 
 .author-content > img {
+    margin: 1rem;
     grid-row: 1;
     grid-column: 1 / 1;
+    max-width: 90%;
     border-radius: 50%;
 }
 
 .author-content > p {
     grid-row: 1;
     grid-column: 2 / 2;
-    padding: 1rem;
+    padding: 0;
+    margin: 1rem;
     margin-left: 2rem;
 }
 
