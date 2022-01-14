@@ -1,4 +1,6 @@
 .footer {
-    margin-top: 3rem;
+    margin-top: 2rem;
     font-size: medium;
+    background-color: var(--main-bg-color);
+    color: var(--main-fg-color);
 }

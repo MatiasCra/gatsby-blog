@@ -14,7 +14,7 @@ const AboutPage = () => {
         and I'm exited to continue learning about tech and software. 
       </p>
       <p>
-        Nedd a developer? <Link to="/contact">Contact me.</Link>
+        Nedd a developer? <Link to="/contact" className="gradient-text">Contact me.</Link>
       </p>
     </Layout>
   );

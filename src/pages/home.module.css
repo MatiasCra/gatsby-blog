@@ -1,5 +1,6 @@
 .home-container {
   display: flex;
+  place-items: center;
   justify-content: center;
   margin: 0;
   padding-top: 2rem;
@@ -7,6 +8,8 @@
   width: 100%;
   padding: 2rem;
   flex-grow: 1;
+  background-color: var(--main-bg-color);
+  color: var(--main-fg-color);
 }
 
 @keyframes slide-up {
@@ -29,7 +32,7 @@
 .home-info > h1 {
   font-size: 6rem;
   text-decoration: underline;
-  text-decoration-color: #744c9e;
+  text-decoration-color: var(--main-accent-color);
 }
 
 .home-info > h2 {
@@ -52,6 +55,10 @@
   width: 60vmin;
   height: 60vmin;
   float: right;
+  background-color: var(--main-fg-color);
+  border-radius: 50%;
+  outline: #744C9E 3px solid;
+  outline-offset: -2px;
 }
 
 @media only screen and (max-width: 835px) {
@@ -63,7 +70,11 @@
     grid-row: 22;
     grid-column: 1 / 1;
     width: 100%;
-    height: 100%;
+    height: auto;
+    background-color: var(--main-fg-color);
+    border-radius: 50%;
+    outline: #744C9E 3px solid;
+    outline-offset: -2px;
   }
 
   .home-info {
@@ -79,4 +90,5 @@
   flex-direction: column;
   min-height: 100vh;
   align-items: center;
+  background-color: var(--main-bg-color);
 }

@@ -12,7 +12,7 @@ const IndexPage = () => {
       <Head title="Home" />
       <div className={homeStyles.homeContainer}>
         <div className={homeStyles.homeInfo}>
-          <h1>Hello</h1>
+          <h1 className="gradient-text">Hello</h1>
           <h2>This is a simple <br/> blog website <br/> made with Gatsby.</h2>
         </div>
         <img

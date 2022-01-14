@@ -1,7 +1,7 @@
 .header {
   padding: 0 2rem 0;
   margin: 0;
-  background-color: #333b3f;
+  background-color: var(--darker-bg-color);
   width: 100%;
   height: 4rem;
   display: block;
@@ -15,7 +15,11 @@
 }
 
 .title > a {
-  color: ghostwhite;
+  /* background: rgb(255,178,56);
+  background: linear-gradient(90deg, rgba(255,178,56,1) 0%, rgba(212,89,171,1) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  color: var(--main-fg-color);
   font-size: 2rem;
   line-height: 3.5rem;
   text-decoration: none;
@@ -47,7 +51,7 @@
     top: 4rem;
     height: 0;
     left: 0;
-    background-color: #262c2e;
+    background-color: var(--darker-bg-color);
     width: 100%;
     text-align: center;
     padding: 0;
@@ -73,12 +77,12 @@
   margin: 0;
   padding: 0;
   height: 14.5rem;
-  background-color: #262c2e;
+  background-color: var(--darker-bg-color);
   width: 100%;
 }
 
 .nav-item {
-  color: rgb(199, 199, 199);
+  color: var(--darker-fg-color);
   font-size: 0.9rem;
   margin-right: 1.3rem;
   margin-bottom: 0;
@@ -88,9 +92,9 @@
 }
 
 .nav-item:hover {
-  color: ghostwhite;
+  color: var(--main-fg-color);
 }
 
 .active-nav-item {
-  color: ghostwhite;
+  color: var(--main-fg-color);
 }
