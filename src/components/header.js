@@ -20,7 +20,7 @@ const Header = () => {
         <Link to="/">{data.site.siteMetadata.title}</Link>
       </h1>
       <nav className={headerStyles.navBar}>
-        <MenuButton toggleMenuClass={headerStyles.navMenu} menuId="nav-list"/>
+        <MenuButton toggleMenuClass={headerStyles.navMenu} menuId="nav-list" />
         <ul className={headerStyles.navList} id="nav-list">
           <li>
             <Link

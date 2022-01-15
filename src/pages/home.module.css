@@ -57,7 +57,7 @@
   float: right;
   background-color: var(--main-fg-color);
   border-radius: 50%;
-  outline: #744C9E 3px solid;
+  outline: #744c9e 3px solid;
   outline-offset: -2px;
 }
 
@@ -73,7 +73,7 @@
     height: auto;
     background-color: var(--main-fg-color);
     border-radius: 50%;
-    outline: #744C9E 3px solid;
+    outline: #744c9e 3px solid;
     outline-offset: -2px;
   }
 

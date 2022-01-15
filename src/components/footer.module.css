@@ -1,6 +1,6 @@
 .footer {
-    margin-top: 2rem;
-    font-size: medium;
-    background-color: var(--main-bg-color);
-    color: var(--darker-fg-color);
+  margin-top: 2rem;
+  font-size: medium;
+  background-color: var(--main-bg-color);
+  color: var(--darker-fg-color);
 }

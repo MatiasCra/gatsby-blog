@@ -11,10 +11,13 @@ const AboutPage = () => {
       <p>
         Hey, I'm Matías a software developer and I can make websites like this
         one. I'm a Computer Science student at the University of Buenos Aires
-        and I'm exited to continue learning about tech and software. 
+        and I'm exited to continue learning about tech and software.
       </p>
       <p>
-        Nedd a developer? <Link to="/contact" className="gradient-text">Contact me.</Link>
+        Nedd a developer?{" "}
+        <Link to="/contact" className="gradient-text">
+          Contact me.
+        </Link>
       </p>
     </Layout>
   );

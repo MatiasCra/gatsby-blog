@@ -19,3 +19,7 @@
 .author-link:hover {
   color: var(--main-fg-color);
 }
+
+img {
+  width: 100%;
+}

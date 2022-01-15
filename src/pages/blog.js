@@ -37,7 +37,9 @@ const BlogPage = () => {
                 <div className={blogStyles.blogInfo}>
                   <h2>{edge.node.title}</h2>
                   <p className={blogStyles.date}>{edge.node.publishedDate}</p>
-                  <p className={blogStyles.author}>by {edge.node.author.name}</p>
+                  <p className={blogStyles.author}>
+                    by {edge.node.author.name}
+                  </p>
                 </div>
                 <div className={blogStyles.bannerPreviewContainer}>
                   <img
