@@ -11,6 +11,35 @@
 
 .content {
     margin: 1rem;
-    max-width: 750px;
     flex-grow: 1;
+}
+
+@media only screen and (max-width: 576px) {
+    .content{
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .content{
+        width: 85%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .content{
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .content{
+        width: 65%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .content{
+        width: 60%;
+    }
 }

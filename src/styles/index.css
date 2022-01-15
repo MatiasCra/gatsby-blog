@@ -1,7 +1,7 @@
 /* Reset provided by https://github.com/gatsbyjs/gatsby-starter-blog via MIT license */
 :root {
   --main-bg-color: #232129;
-  --darker-bg-color: #1a191f;
+  --darker-bg-color: rgba(26, 25, 31, 1);
   --main-fg-color: #ffffff;
   --darker-fg-color: rgb(199, 199, 199);
   --main-accent-color: #663399;

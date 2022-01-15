@@ -10,11 +10,12 @@
 .author-link {
   grid-row: 1;
   grid-column: 2 / 2;
-  color: #333333;
+  color: var(--darker-fg-color);
   text-decoration: none;
   text-align: end;
+  transition: color 0.2s ease-out;
 }
 
 .author-link:hover {
-  color: #1b1b1b;
+  color: var(--main-fg-color);
 }

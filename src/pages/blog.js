@@ -16,7 +16,7 @@ const BlogPage = () => {
             image {
               gatsbyImageData(layout: FULL_WIDTH)
             }
-            author{
+            author {
               name
             }
           }
@@ -33,21 +33,17 @@ const BlogPage = () => {
         {data.allContentfulBlogPost.edges.map((edge) => {
           return (
             <li key={edge.node.slug} className={blogStyles.post}>
-              <Link
-                to={`/blog/${edge.node.slug}`}
-              >
+              <Link to={`/blog/${edge.node.slug}`} className={blogStyles.card}>
+                <div className={blogStyles.blogInfo}>
+                  <h2>{edge.node.title}</h2>
+                  <p className={blogStyles.date}>{edge.node.publishedDate}</p>
+                  <p className={blogStyles.author}>by {edge.node.author.name}</p>
+                </div>
                 <div className={blogStyles.bannerPreviewContainer}>
                   <img
                     src={edge.node.image.gatsbyImageData.images.fallback.src}
                     alt="banerPreview"
                   />
-                </div>
-                <div className={blogStyles.blogInfo}>
-                  <h2>{edge.node.title}</h2>
-                  <p>{edge.node.publishedDate}</p>
-                </div>
-                <div className={blogStyles.blogAuthor}>
-                  <p>{edge.node.author.name}</p>
                 </div>
               </Link>
             </li>
